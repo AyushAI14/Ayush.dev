@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Ayush.dev|Home{% endblock %}
+
+{% block content %}
+
+<main>
+  <section class="firstSection">
+    <div class="leftSection">
+      <h1 id="name">
+        Hi, My Name Is <span id="ayush">Ayush Vishwakarma</span>
+      </h1>
+      <div id="skill">I am a Passionate <span id="element"></span></div>
+    </div>
+    <div class="rightSection">
+      <img src="img/development-4536630.png" alt="profile image" />
+    </div>
+  </section>
+  <hr id="line1">
+  <Section class="secondSection">
+    <div id="work">Work /&gt;</div>
+    <div class="project">
+      <div id="spotify">
+        <h3 class="Heading">Spotify Clone</h3>
+        <p class="spotify_cont cont">This project is a web page inspired by the popular music streaming service,
+          Spotify. It features a clean and user-friendly interface that allows users to browse and listen to their
+          favorite music. The page includes a navigation bar, a song list with album covers, a progress bar for
+          tracking the playback, and control icons for play, pause, shuffle, and repeat. The project showcases a
+          visually appealing design and demonstrates skills in web development and design. It provides a familiar and
+          enjoyable music streaming experience for users.
+          <a href="#"><video src="Video\Spotify_vid.mp4" alt="Spotify CLone" class="videoSpotify"
+              poster="img/Spotify.png" autoplay muted loop></a>
+
+        </p>
+      </div>
+      <div id="online_hunger">
+        <h3 class="Heading">Online_hunger</h3>
+        <p class="online_hunger_cont cont">This project is a simple HTML webpage for an online food delivery service
+          called "Online_hunger.com." The webpage includes various sections, such as a navigation bar, a welcome
+          video, information about the services offered, a section showcasing client logos, a contact form, and a
+          footer. It also features responsive design elements, as indicated by the use of different CSS styles for
+          different screen sizes.
+
+          <a href="#"><video src="Video\Online_hunger_vid.mp4" alt="Online Online_hunger" class="videoSpotify"
+              poster="img/Online_Hunger.png" autoplay muted loop></a>
+
+        </p>
+      </div>
+      <div id="Attendence">
+        <h3 class="Heading">Online Attendence System</h3>
+        <p class="Attendence_cont cont">This project is an Online Attendance System designed to simplify and
+          streamline the process of recording and managing attendance for educational institutions, businesses, or any
+          organization that requires attendance tracking. It offers a user-friendly interface that allows users to log
+          in, mark attendance, and generate reports.
+
+          Key features of the system include user authentication for secure access, the ability to create and manage
+          courses or sessions, marking attendance for students or employees, and generating detailed attendance
+          reports. The project demonstrates proficiency in web development, database management, and user
+          authentication, providing a valuable tool for organizations seeking to digitize and automate their
+          attendance tracking processes.
+          <a href="#"><video src="Video\Student Attendance_vid.mp4" alt="attendance" class="videoSpotify"
+              poster="img/Attendence.png" autoplay muted loop></a>
+
+        </p>
+      </div>
+    </div>
+    <hr id="line2">
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+{% endblock %}
+<footer>
+  <h2><a href="{{ url_for('contact')}}">Contact me</a></h2>
+</footer>

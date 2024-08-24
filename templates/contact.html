@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ayush.ml|Contact{%endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}">
+
+</head>
+<body>
+<header>
+    <nav class="navbar" id="home">
+      <div class="left">
+        <h1><a href="{{ url_for('home')}}">&lt;AYUSH /&gt;</a></h1>
+      </div>
+      <div class="right">
+        <ul class="links">
+          <!-- <button class="icon"><img src="img/sleep-mode.png" alt="" id="imgIcon" onclick="dark()"></button> -->
+          <li><a href="{{ url_for('home')}}">Home /&gt;</a></li>
+          <li><a href="#work">Work /&gt;</a></li>
+          <li><a href="{{ url_for('about')}}">About /&gt;</a></li>
+          <li><a href="{{ url_for('contact')}}">Contact /&gt;</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+<div class="contact_box">
+    <div class="con_img">
+        <img src="img/1695254054498-removebg-preview.png"
+            alt="">
+    </div>
+    <div class="con_left">
+        <div class="con_text">
+            <h1>Let's</h1>
+            <h3>Connect</h3>
+        </div>
+        <div class="con_icon">
+            <a href="https://github.com/AyushAI14" target="_blank"><img src="img/github.png" alt="GitHub Logo"> </a>
+            <a href="https://x.com/Ayushvishw20855" target="_blank"><img
+                    src="img/twitter.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/ayush-vishwakarma-a2450a28b/" target="_blank"><img
+                    src="img/linkedin.png" alt=""></a>
+
+        </div>
+    </div>
+</div>
+
+    <!-- <footer>
+      <h2><a href="{{ url_for('contact')}}">Contact me</a></h2>
+    </footer> -->
+    <script src="{{ url_for('static', filename='portfolio.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/typed.min.js') }}"></script>
+</body>
+</html>

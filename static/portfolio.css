@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Montserrat:wght@200&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Qwitcher+Grypen:wght@700&family=Source+Sans+3&family=Ysabeau+SC:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: black;
+    color: rgba(255, 143, 161, 0.687);
+}
+
+:root {
+    --primary-color: rgb(112 164 125 / 90%);
+    --Secondary-color: rgb(112, 164, 125);
+}
+
+.DarkTheme {
+    transition: all 1s;
+    --primary-color: #0000008f;
+    --Secondary-color: #0000008f;
+}
+
+body {
+    transition: all 1s;
+
+    background-color: var(--primary-color);
+    /* background-color: rgb(54, 69, 79); */
+    color: white;
+    /* animation: animate 1s linear infinite; */
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+
+}
+
+/* ---------------navbar section--------------- */
+div.left {
+    margin: 24px 24px 23px 24px;
+    text-decoration: none;
+}
+
+div.left h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+div.right {
+    margin: 12px 12px 12px 12px;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+div ul.links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+}
+
+button.icon {
+    border: none;
+    background-color: transparent;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+button.icon img {
+    width: 23px;
+    height: 23px;
+}
+
+li a {
+    cursor: pointer;
+    color: white;
+    padding: 12px 12px 12px 12px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(24, 24, 93);
+    font-size: 1.04rem;
+    animation: animate 1s linear infinite;
+
+}
+
+/* --------------- profile first section--------------- */
+Section.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 8px 9px -3px;
+}
+
+div#skill {
+    margin: 3px 0;
+}
+
+div.rightSection img {
+    width: 230px;
+    margin: -52px 0;
+    animation: animate 1s linear infinite;
+
+
+}
+
+span#ayush {
+    color: rgb(74 74 180);
+    animation: animate 1s linear infinite;
+
+}
+
+span#element {
+    color: rgb(74 74 180);
+    animation: animate 1s linear infinite;
+
+}
+
+/* ------------second Section----------------- */
+hr#line1 {
+    border: 0;
+    background-color: rgb(23, 23, 82);
+    height: 2px;
+    margin: 200px;
+    animation: animate 1s linear infinite;
+
+}
+
+hr#line2 {
+    border: 0;
+    background-color: rgb(23, 23, 82);
+    height: 2px;
+    margin: 0 auto;
+    animation: animate 1s linear infinite;
+    width: 80%;
+
+}
+
+Section.secondSection {
+    transition: all 1s;
+
+    margin-top: -102px;
+    background-color: var(--Secondary-color);
+
+}
+
+/* --------Work- */
+div#work {
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 30px 32px;
+    font-size: 2em;
+}
+
+div.project {}
+
+h3.Heading {
+    margin: 12px 12px 12px 31px;
+}
+
+div#online_hunger {}
+
+div#Attendence {}
+
+p.cont {
+    margin: 30px 30px 30px 30px;
+}
+
+p.spotify_cont {
+    display: flex;
+    font-size: 13px;
+}
+
+p.online_hunger_cont {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 12px;
+}
+
+p.Attendence_cont {
+    display: flex;
+    font-size: 12px;
+}
+
+video.videoSpotify {
+    display: flex;
+    margin: 0px 20px 20px 20px;
+    width: 280px;
+    border: 2px solid rgb(4, 4, 84);
+    border-radius: 14px;
+    /* animation: animate 1s linear infinite; */
+
+}
+
+/* --------About- */
+div#About {
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 30px 32px;
+    font-size: 2em;
+}
+
+div.journey {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Container for the code */
+div.code {
+    background-color: #000e2a00;
+    ;
+    color: #abb2bf;
+    padding: 20px;
+    border: 1px solid #3d4451;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    margin: 3px 165px 11px 165px;
+}
+
+div.code:hover {
+
+    /* animation: animate 1s linear infinite; */
+}
+
+
+/* Style class, constructor, property, method, and content elements */
+div.class,
+div.constructor,
+div.property,
+div.method,
+span.content {
+    color: #04ff0a;
+}
+
+/* Style white spaces and punctuation */
+span.white {
+    color: #abb2bf;
+}
+
+/* Style code blocks */
+div.content.code {
+    background-color: #224483;
+    padding: 2px 8px;
+    border: 1px solid #4b5263;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Add a bit of spacing between code blocks */
+div.class,
+div.constructor,
+div.property,
+div.method,
+span.content,
+span.white,
+div.content.code {
+    margin-right: 5px;
+}
+
+/* div.class,div.constructor,div.method{
+    color: rgb(3, 255, 3);
+    font-weight: bold;
+text-shadow: #3d4451; */
+/* animation: animate 1s linear infinite; */
+/* } */
+/* Style the 'return' keyword */
+div.method>div.method {
+    color: #17f5e6;
+    font-weight: bold;
+}
+/* footer ---------------------- */
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 12px 12px 12px 12px;
+    background-color:rgb(101, 147, 112); 
+    height: 50px;
+}
+footer h2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+  
+
+}
+footer h2 a:hover{
+    animation: animate 1s linear infinite;
+}
+
+/* contact ------------------------- */
+div.contact_box{
+    background-color:rgb(101, 147, 112); 
+    margin: 50px;
+}
+div.con_left {
+    position: absolute;
+    right: 10%;
+}
+
+div.con_text {
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+}
+
+div.con_text h1 {
+    font-size: 130px;
+}
+
+div.con_text h3 {
+    font-size: 110px;
+
+}
+
+div.con_icon {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 105px;
+    top: 280px;
+}
+
+div.con_icon a img{
+    width: 60px;
+    transform: all 1s;
+
+}
+div.con_icon a img:hover{
+    width: 63px;
+}
+div.con_img img{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 105px;
+    bottom: 242px;
+
+}

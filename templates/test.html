@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style the code container with a dark theme */
+div.code {
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 20px;
+  border: 1px solid #3d4451;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+}
+
+/* Style class, constructor, property, method, and content elements */
+div.class, div.constructor, div.property, div.method, span.content {
+  color: #61afef;
+}
+
+/* Style white spaces and punctuation */
+span.white {
+  color: #abb2bf;
+}
+
+/* Style code blocks */
+div.content.code {
+  background-color: #3d4451;
+  padding: 2px 8px;
+  border: 1px solid #4b5263;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Add a bit of spacing between code blocks */
+div.class, div.constructor, div.property, div.method, span.content, span.white, div.content.code {
+  margin-right: 5px;
+}
+
+/* Style the 'return' keyword */
+div.method > div.method {
+  color: #c678dd;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+    <div class="code">
+        <div class="class">class</div> <span class="content">Ayush Vishwakarma</span> {
+          <div class="constructor">constructor</div><span class="white">()</span> {
+            <div class="property">this.name</div> = <span class="content">'Ayush Vishwakarma'</span>;
+            <div class="property">this.email</div> = <span class="content">'Stoneayush14@gmail.com'</span>;
+          }
+      
+          <div class="method">workExperience<span class="white">()</span><span class="white">{</span>
+            return <span class="white">[</span>
+              <span class="white">{</span>
+                <span class="content code">'Hackerthon' : 'National hackathon 3.0National hackathon 3.0
+                    College of Engineering Roorkee (COER)'</span>
+              <span class="white">}</span>
+            <span class="white">]</span>;
+          <span class="white">};</span>
+          </div>
+      
+          <div class="method">education<span class="white">()</span> <span class="white">{</span>
+            return <span class="white">[</span>
+              <span class="white">{</span><span class="content">'2021-2023': 'Confluence World School - 12, PCM'</span><span class="white">}</span>,
+              <span class="white">{</span><span class="content">'2023-Present': 'Apex Groups of Institutions - Bachelor of Computer Application (BCA), Computer Science (IT)'</span><span class="white">}</span>
+            <span class="white">]</span>;
+          <span class="white">};</span>
+          </div>
+      
+          <div class="method">skills<span class="white">()</span><span class="white">{</span>
+            <span class="content">
+              <div class="method">return</div> <span class="white">[</span> 'HTML/CSS/JS', 'Node.js', 'Tailwind',
+              'Firebase', 'PHP', 'Photoshop', 'Illustrator', 'Da Vinci Resolve', 'Git/Github'
+              <span class="white">]</span>;
+            <span class="white">};</span>
+            </span>
+          </div>
+        }
+      </div>
+      </section>
+</body>
+</html>
